@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
     <link rel="stylesheet" href="/assets/materialize/css/materialize.min.css">
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/util.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     
-  <nav>
+  <nav class="light-blue accent-4">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#!" class="">Home</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="sass.html">Sign in</a></li>
@@ -23,11 +24,29 @@
     </div>
   </nav>
 
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sign in</a></li>
-    <li><a href="badges.html">Update</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Delete</a></li>
+  <ul class="sidenav light-blue lighten-5" id="mobile-demo">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="img/3.jpg" class="width_100">
+      </div>
+      <a href="#user"><img class="circle" src="img/1.jpg"></a>
+      <a href="#name"><span class="black-text name">Mahdi</span></a>
+      <a href="#email"><span class="black-text email">example@gmail.com</span></a>
+    </div></li>
+    <li>
+      <a href="https://google.com">
+        <i class="material-icons">
+          link
+        </i>
+        google site
+      </a>
+    </li>
+    <li><a href="https://www.aparat.com/playlist/26437355/%D8%A2%D9%85%D9%88%D8%B2%D8%B4_%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C_%D9%88%D8%A8_%D8%B3%D8%A7%DB%8C%D8%AA_%D8%A8%D8%A7_asp.net_core_%26ndash%3B_%D9%BE%DB%8C%D8%B4%D8%B1%D9%81%D8%AA%D9%87"><i class="material-icons">link</i>Learning ASP.net</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Home</a></li>
+    <li><a class="waves-effect" href="#!">Setting</a></li>
+
   </ul>
     
     <script src="assets/materialize/js/materialize.min.js"></script>
